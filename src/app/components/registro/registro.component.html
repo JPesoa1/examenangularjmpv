@@ -1,0 +1,23 @@
+<div>
+    <div>
+        <form style="width:400px;" #formulario="ngForm" (ngSubmit)="registro()">
+            <label>Nombre: </label> <br/>
+            <input class="form-control" type="text" #cajanombre name="cajanombre" required /><br/>
+    
+            <label>Email: </label>
+            <input class="form-control" type="text" #cajaemail name="cajaemail" required /><br/>
+            
+            <label>Password: </label>
+            <input class="form-control" type="text" #cajapassword name="cajapassword" required /><br/>
+    
+            <label>Repetir Password: </label>
+            <input class="form-control" type="text" #cajaconfirmarpassword name="cajaconfirmarpassword" required /><br/>
+    
+            <button class="btn btn-info">
+                Registro
+            </button>
+    
+        </form>
+    
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<h1>Compras</h1>
+
+<div *ngIf="compras">
+  
+    <li *ngFor="let compra of compras">
+        <hr/>
+        <ul> IdCubo :{{compra.idCubo}}</ul>
+        <ul>IdPedido :{{compra.idPedido}}</ul>
+        <ul>IdUsuario: {{compra.idUsuario}}</ul>
+        <ul>Fecha :{{compra.fechaPedido}}</ul>
+    </li>
+
+</div>

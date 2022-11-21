@@ -1,0 +1,12 @@
+<div>
+    <div *ngIf="detalleCubo">
+        <h1>Opiniones de nuestros usuarios</h1>
+        <div *ngFor="let detalles of detalleCubo"   style="text-align: center;" >
+            <hr/>
+            <p>{{detalles.comentario}}</p>
+            <h3>{{detalles.fechaComentario}}</h3>
+           
+        </div>
+        
+    </div>
+</div>

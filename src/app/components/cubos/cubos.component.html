@@ -1,0 +1,22 @@
+<div style="margin: 0 auto;">
+    <h1>CUBOS</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>MODELO</th>
+                <th>MARCA</th>
+                <th>IMAGEN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cubo of cubos">
+                <td>{{cubo.nombre}}</td>
+                <td>{{cubo.modelo}}</td>
+                <td>{{cubo.marca}}</td>
+                <td><img style="width: 200px; height: 200px" src="{{cubo.imagen}}"/></td>
+                <button (click)=comprar(cubo.idCubo)>Comprar</button>
+            </tr>
+        </tbody>
+    </table>
+</div>

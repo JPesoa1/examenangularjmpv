@@ -1,0 +1,17 @@
+<div>
+    <form style="width:400px;" #formulario="ngForm" (ngSubmit)="login()">
+        <label>Email: </label> <br/>
+        <input class="form-control" type="text" #cajaemail name="cajaemail" required /><br/>
+
+        <label>Password: </label>
+        <input class="form-control" type="text" #cajapassword name="cajapassword" required /><br/>
+
+        <button class="btn btn-info">
+            Login
+        </button>
+
+    </form><br/>
+    <button class="btn btn-success" (click)="registro()">
+        Registro
+    </button>
+</div>
